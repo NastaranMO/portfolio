@@ -1,16 +1,25 @@
-import React from 'react'
-import './BaseLayout.module.scss'
-import Navbar from './Navbar';
+import React, { useState } from 'react';
+import Style from './BaseLayout.module.scss'
+import Navbar from "./Navbar";
+// import Home from "./home/Home";
+// import About from "./about/About";
+// import Portfolio from "./portfolio/Portfolio";
 import { Route, Routes } from "react-router-dom";
-import { Box, Grid } from '@mui/material'
+import { Box, Grid } from "@mui/material";
 
-const BaseLayout = () => {
+export default function BaseLayout() {
+    let [darkMode, setDarkMode] = useState(false);
+
+    function handleClick() {
+        setDarkMode(!darkMode);
+    }
+
     return (
-        <Box className='dark'>
+        <Box className={darkMode ? Style.dark : Style.light}>
             <Grid container display={'flex'} flexDirection={'column'} minHeight={'100vh'}
                 justifyContent={'space-between'}>
                 <Grid item>
-                    <Navbar />
+                    <Navbar darkMode={darkMode} handleClick={handleClick} />
                 </Grid>
                 <Grid item flexGrow={1}>
                     <Routes>
@@ -22,7 +31,7 @@ const BaseLayout = () => {
                 <Grid item>
                     <Box component={'footer'} display={'flex'} flexDirection={'column'} alignItems={'center'}
                         py={'1.5rem'} sx={{ opacity: 0.7 }} width={'100%'}>
-                        <p>Created with &hearts; by Nastaran Moghadasi</p>
+                        <p>template created with &hearts; by <a href={'https://paytonpierce.dev'}>Payton Pierce</a></p>
                         <p>&copy; 2022</p>
                     </Box>
                 </Grid>
@@ -31,4 +40,3 @@ const BaseLayout = () => {
     )
 }
 
-export default BaseLayout
