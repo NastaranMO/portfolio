@@ -8,7 +8,7 @@ function PortfolioBlock(props) {
       <Box display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'}>
          <Box component={'img'} src={image} alt={'mockup'} />
 
-         <Box margin="-5em" display={'flex'} flexDirection={'column'} gap={'0.5rem'}
+         <Box display={'flex'} flexDirection={'column'} gap={'0.5rem'}
             alignItems={'center'} fontSize={'1.5rem'} py={'2rem'}>
             <Box p={1} border={'2px solid black'} borderRadius={'25px'}>
                <IconLink link={live} title={'Live Demo'} icon={'fa fa-safari'} />
