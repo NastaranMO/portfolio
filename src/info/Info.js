@@ -23,8 +23,8 @@ of what each of the values mean.
  */
 
 export const info = {
-    firstName: "John",
-    lastName: "Smith",
+    firstName: "Nastaran",
+    lastName: "Moghadasi",
     initials: "js", // the example uses first and last, but feel free to use three or more if you like.
     position: "a Full Stack Developer",
     selfPortrait: self, // don't change this unless you want to name your self-portrait in the "img" folder something else!
@@ -37,35 +37,35 @@ export const info = {
         },
         {
             emoji: '🌎',
-            text: 'based in the US'
+            text: 'based in Amsterdam'
         },
         {
             emoji: "💼",
-            text: "Systems Engineer at Google"
+            text: "Passionate Software Developer"
         },
         {
             emoji: "📧",
-            text: "johnsmith@gmail.com"
+            text: "nastaran.moghadasi@gmail.com"
         }
     ],
     socials: [
+        // {
+        //     link: "https://facebook.com",
+        //     icon: 'fa fa-facebook',
+        //     label: 'facebook'
+        // },
+        // {
+        //     link: "https://instagram.com",
+        //     icon: 'fa fa-instagram',
+        //     label: 'instagram'
+        // },
         {
-            link: "https://facebook.com",
-            icon: 'fa fa-facebook',
-            label: 'facebook'
-        },
-        {
-            link: "https://instagram.com",
-            icon: 'fa fa-instagram',
-            label: 'instagram'
-        },
-        {
-            link: "https://github.com",
+            link: "https://github.com/NastaranMO",
             icon: "fa fa-github",
             label: 'github'
         },
         {
-            link: "https://linkedin.com",
+            link: "https://www.linkedin.com/in/nastaran-moghadasi/",
             icon: "fa fa-linkedin",
             label: 'linkedin'
         },
