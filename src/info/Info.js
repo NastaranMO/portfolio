@@ -1,6 +1,6 @@
 import self from "../img/self.png"
-import mock1 from "../img/mock1.png"
-import mock2 from "../img/mock2.png"
+import project1 from "../img/project1.png"
+import project2 from "../img/project2.png"
 
 
 export let colors = ["rgb(0,255,164)", "rgb(166,104,255)"];
@@ -23,8 +23,8 @@ export const info = {
             text: 'based in Amsterdam'
         },
         {
-            emoji: "💼",
-            text: "Passionate Software Developer"
+            emoji: "🌱",
+            text: "Learning never ends"
         },
         {
             emoji: "📧",
@@ -74,13 +74,13 @@ export const info = {
             title: "Project 1",
             live: "https://tic-tac-toe-app.herokuapp.com/",
             source: "https://github.com/NastaranMO/tic-tac-toe",
-            image: mock1
+            image: project1
         },
         {
             title: "Project 2",
             live: "https://popular-github-repos.netlify.app/battle",
             source: "https://github.com/NastaranMO/popular-github-repo",
-            image: mock2
+            image: project2
         },
     ]
 }
